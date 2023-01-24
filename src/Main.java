@@ -5,8 +5,10 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
-
     public static void task1() {
         System.out.println("Задача 1");//Код задачи 1
         var dog = 8.0;
@@ -16,7 +18,6 @@ public class Main {
         System.out.println(cat);
         System.out.println(paper);
     }
-
     public static void task2() {
         System.out.println("Задача 2");//Код задачи 2
         var dog = 8.0;
@@ -29,7 +30,6 @@ public class Main {
         System.out.println(cat);
         System.out.println(paper);
     }
-
     public static void task3() {
         System.out.println("Задача 3");//Код задачи 3
         var dog = 8.0;
@@ -42,7 +42,6 @@ public class Main {
         System.out.println(cat);
         System.out.println(paper);
     }
-
     public static void task4() {
         System.out.println("Задача 4");//Код задачи 4
         var friend = 19;
@@ -52,7 +51,6 @@ public class Main {
         friend = friend / 7;
         System.out.println(friend);
     }
-
     public static void task5() {
         System.out.println("Задача 5");//Код задачи 5
         var frog = 3.5;
@@ -63,5 +61,35 @@ public class Main {
         System.out.println(frog);
         frog = frog + 4;
         System.out.println(frog);
+    }
+    public static void task6 () {
+        System.out.println("Задача 6");//Код задачи 6
+        var weightBoxer1 = 78.2;
+        var weightBoxer2 = 82.7;
+        System.out.println("Вес первого боксёра " + weightBoxer1 + " кг.");
+        System.out.println("Вес второго боксёра " + weightBoxer2 + " кг.");
+        var totalWeightBoxers = (weightBoxer1 + weightBoxer2);
+        System.out.println("Общий вес двух боксёров " + totalWeightBoxers + " кг.");
+        var weightDifference = (weightBoxer1 - weightBoxer2);
+        System.out.println("разница веса двух боксёров " + weightDifference + " кг.");
+    }
+    public static void task7 () {
+        System.out.println("Задача 7");//Код задачи 7
+        var weightBoxer1 = 78.2;
+        var weightBoxer2 = 82.7;
+        var weightDifference = (weightBoxer2 - weightBoxer1);
+        System.out.println("1й способ: разница веса двух боксёров " + weightDifference + " кг.");
+        var weightDifference2 = (weightBoxer2 % weightBoxer1);//Какая-то дичь)
+        System.out.println("2й способ: разница веса двух боксёров " + weightDifference2 + " кг.");
+    }
+    public static void task8 () {
+        System.out.println("Задача 8");//Код задачи 8
+        var hour = 640;
+        var work= 8;
+        var staff = hour / work;
+        System.out.println("Всего работников в компании— " + staff + " человек");
+        var increasedStaff = staff + 94;
+        var distributedHour = hour / increasedStaff;
+        System.out.println("Если в компании работает  " + increasedStaff + " человека, то всего  " + distributedHour + " часа работы мажет быть поделено между сотрудниками.");
     }
 }
